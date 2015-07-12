@@ -1,0 +1,13 @@
+Zewnêtrznie:
+- dodana mo¿liwoœæ klikniêcia w guzik "Log me in!" (przenosi do MainMenu)
+- dodana mo¿liwoœæ klikniêcia w guzik "Survival" (przenosi do Gry)
+- Po przeniesieniu go gry daj siê sterowaæ Playerem (w, s, myszka, spacja(zwiêksza mov_speed o 1))
+
+Wewnêtrznie:
+-{!} zmieniony kod update w³¹cznie z drobnymi poprawkami do Draw oraz Base; dodane "InputUtil" mo¿liwy do wykorzystania w dowolnym miejscu 
+	[NOTE: Aby uzyskaæ efekt pojedynczego klikniêcia/wciœniêcia w warunku sprawdzaj¹cym czy wciœniêto trzeba wprowadziæ
+ 	"InputUtil.mouseButton1 = false;" tak jak w "LoginMenu", linijka 47]
+- uproszczona klasa "gameStates"
+- dodany kod do "MainMenu"
+- dodana klasa "MenuItem"
+- dodany nowy Package "survival" Wraz z klas¹ "Survival"
