@@ -6,5 +6,5 @@ package main;
 public enum gameStates {
     MENU,
     SURVIVAL,
-    HARDCORE;
+    HARDCORE
 }

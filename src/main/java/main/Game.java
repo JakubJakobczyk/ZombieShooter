@@ -1,15 +1,13 @@
 package main;
 
-import java.awt.Graphics2D;
-
-import survival.Survival;
-import characters.Player;
+import basic.GameClass;
 import menu.MenuHandler;
-import basic.*;
+import survival.Survival;
+
+import java.awt.*;
 
 
-public class Game implements GameClass
-{
+public class Game implements GameClass {
     /*
     private enum gameStates
     {
@@ -24,26 +22,22 @@ public class Game implements GameClass
     private Survival survival;
     //private Hardcore hardcore;
 
-    public Game() 
-    {
-    
+    public Game() {
+
     }
 
-    public void initialize()
-    {
+    public void initialize() {
         fps = new FPSCounter();
         menu = new MenuHandler();
         survival = new Survival();
         gameState = gameStates.MENU;
     }
 
-    public void update() 
-    {
+    public void update() {
         fps.update();
-        switch (gameState) 
-        {
+        switch (gameState) {
             case SURVIVAL:
-            	survival.update();
+                survival.update();
                 break;
             case HARDCORE:
                 break;
@@ -53,13 +47,11 @@ public class Game implements GameClass
         }
     }
 
-    public void draw(Graphics2D g)
-    {
+    public void draw(Graphics2D g) {
         fps.draw(g);
-        switch (gameState)
-        {
+        switch (gameState) {
             case SURVIVAL:
-            	survival.draw(g);
+                survival.draw(g);
                 break;
             case HARDCORE:
                 break;
