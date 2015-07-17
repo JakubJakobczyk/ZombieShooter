@@ -8,6 +8,7 @@ import input.InputUtil;
 import main.Game;
 import main.gameStates;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 class MainMenu implements GameClass {
@@ -22,7 +23,7 @@ class MainMenu implements GameClass {
     public MainMenu() {
         width = Base.getWidth();
         height = Base.getHeight();
-        menuItems = new ArrayList<MenuItem>();
+        menuItems = new ArrayList<>();
         menuItems.add(new MenuItem(width / 2 - (Base.stringWidth(Fonts.normalFont, "Survival") / 2), (int) (height * 0.40),
                 "Survival", Color.WHITE, Color.CYAN, Fonts.normalFont));
         menuItems.add(new MenuItem(width / 2 - (Base.stringWidth(Fonts.normalFont, "Hardcore") / 2), (int) (height * 0.50),

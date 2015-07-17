@@ -19,7 +19,7 @@ public class Player extends Creature {
         super(x, y, 10);
         mov_speed = 15;
 
-        File img_file = new File("resources/images/player/player_temp.png");
+        File img_file = new File("src/resources/images/player/player_temp.png");
         BufferedImage img;
         try {
             img = ImageIO.read(img_file);
